@@ -1,11 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Twój Koszyk - NazwaSklepu</title>
+    <!-- Możesz tu dodać link do pliku CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body id="koszyk">
-    
+
+    <header>
+        <h1>Twój Koszyk</h1>
+    </header>
+
+    <main>
+        <!-- Kontener na listę produktów -->
+        <section id="lista-produktow">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produkt</th>
+                        <th>Ilość</th>
+                        <th>Cena</th>
+                        <th>Suma</th>
+                        <th>Akcja</th>
+                    </tr>
+                </thead>
+                <tbody id="produkty-w-koszyku">
+                    <!-- Tu będą dynamicznie dodawane produkty za pomocą JS -->
+                    <tr>
+                        <td>Przykładowy Produkt</td>
+                        <td>1</td>
+                        <td>99.00 zł</td>
+                        <td>99.00 zł</td>
+                        <td><button class="usun">Usuń</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Podsumowanie zamówienia -->
+        <section id="podsumowanie">
+            <div class="razem">
+                <p>Razem do zapłaty: <span id="suma-calkowita">99.00 zł</span></p>
+            </div>
+            <div class="akcje">
+                <a href="sklep.html" class="button-wroc">Kontynuuj zakupy</a>
+                <button class="button-kasa">Przejdź do kasy</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Twój Sklep Internetowy</p>
+    </footer>
+
 </body>
 </html>
