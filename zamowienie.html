@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="zamowienie">
+    <header>
+        <h1>Finalizacja zamówienia</h1>
+    </header>
+
+    <main class="container">
+        <form id="formularz-zamowienia">
+            <!-- Dane do wysyłki -->
+            <section class="sekcja-formularza">
+                <h2><span class="numer">1</span> Dane do wysyłki</h2>
+                <div class="input-group">
+                    <input type="text" placeholder="Imię" required>
+                    <input type="text" placeholder="Nazwisko" required>
+                </div>
+                <input type="email" placeholder="Adres e-mail" required>
+                <input type="text" placeholder="Ulica i numer domu" required>
+                <div class="input-group">
+                    <input type="text" placeholder="Kod pocztowy" required>
+                    <input type="text" placeholder="Miasto" required>
+                </div>
+                <input type="tel" placeholder="Numer telefonu" required>
+            </section>
+
+             <section class="sekcja-formularza">
+                <h2><span class="numer">2</span> Metoda płatności</h2>
+                <label class="radio-label">
+                    <input type="radio" name="platnosc" value="blik" checked> BLIK
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="platnosc" value="karta"> Karta płatnicza
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="platnosc" value="przelew"> Przelew tradycyjny
+                </label>
+            </section>
+               <section class="podsumowanie-akcja">
+                <p>Klikając poniższy przycisk, składasz zamówienie z obowiązkiem zapłaty.</p>
+                <button type="submit" class="button-zamow">Zamawiam i płacę</button>
+            </section>
+        </form>
+    </main>
+</html>

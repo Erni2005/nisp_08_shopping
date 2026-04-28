@@ -1,0 +1,205 @@
+#koszyk {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Nagłówek wewnątrz koszyka */
+#koszyk h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+/* Tabela produktów */
+#koszyk table {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#koszyk th {
+    background-color: #3498db;
+    color: white;
+    padding: 15px;
+    text-align: left;
+}
+
+#koszyk td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Styl przycisku usuwania */
+#koszyk .usun {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#koszyk .usun:hover {
+    background-color: #c0392b;
+}
+
+/* Sekcja podsumowania */
+#koszyk #podsumowanie {
+    max-width: 900px;
+    margin: 20px auto;
+    text-align: right;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+#koszyk .razem {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#koszyk #suma-calkowita {
+    color: #27ae60;
+}
+
+/* Przyciski akcji */
+#koszyk .akcje a, 
+#koszyk .button-kasa {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: transform 0.2s;
+}
+
+#koszyk .button-wroc {
+    background-color: #95a5a6;
+    color: white;
+    margin-right: 10px;
+}
+
+#koszyk .button-kasa {
+    background-color: #27ae60;
+    color: white;
+}
+
+#koszyk .akcje a:hover, 
+#koszyk .button-kasa:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+#zamowienie {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+#zamowienie .container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#zamowienie h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* Styl sekcji formularza */
+#zamowienie .sekcja-formularza {
+    background: #fff;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+#zamowienie h2 {
+    font-size: 1.2em;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+}
+
+#zamowienie .numer {
+    background: #3498db;
+    color: white;
+    width: 25px;
+    height: 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 0.8em;
+}
+
+/* Style pol wejściowych */
+#zamowienie input[type="text"],
+#zamowienie input[type="email"],
+#zamowienie input[type="tel"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ważne, żeby padding nie rozpychał inputów */
+}
+
+#zamowienie .input-group {
+    display: flex;
+    gap: 10px;
+}
+
+/* Styl opcji płatności */
+#zamowienie .radio-label {
+    display: block;
+    padding: 10px;
+    border: 1px solid #eee;
+    margin: 5px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#zamowienie .radio-label:hover {
+    background-color: #f9f9f9;
+}
+
+/* Przycisk końcowy */
+#zamowienie .podsumowanie-akcja {
+    text-align: center;
+    padding: 20px;
+}
+
+#zamowienie .button-zamow {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+#zamowienie .button-zamow:hover {
+    background-color: #219150;
+}
